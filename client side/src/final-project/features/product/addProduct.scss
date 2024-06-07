@@ -1,0 +1,188 @@
+.s {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    background-image: url("../../app/images/רקעעע.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 25px 25px 25px;
+        border-radius: 5px;
+        position: relative;
+        border: 2px solid #94561c;
+    }
+
+    .container .title {
+        font-size: 30px;
+        font-weight: 500;
+        padding-right: 5%;
+        position: relative;
+        color: grey;
+    }
+
+    .container .title::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: #94561c;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container form .user__details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 20px 0 12px 0;
+    }
+
+    form .user__details .input__box {
+        width: calc(100% / 2 - 20px);
+        margin-bottom: 15px;
+    }
+
+    .user__details .input__box input {
+        height: 45px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #c0bebe;
+        padding-right: 15px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .user__details .input__box input:focus {
+        outline: black solid 2px;
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: #c0bebe;
+        width: 100%;
+        height: 90px;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    textarea:focus {
+        outline: black solid 2px;
+    }
+
+    .image-upload {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        background-color: #c0bebe;
+        margin-top: 23px;
+        padding: 15px;
+    }
+
+    .image-upload label {
+        margin-right: 10px;
+        font-size: 16px;
+        color: grey;
+    }
+
+    .image-upload input[type="file"] {
+        display: none;
+    }
+
+    .image-upload .CloudUploadIcon {
+        color: grey;
+    }
+
+    form .gender__details .category {
+        display: flex;
+        width: 100%;
+        margin: 15px 0;
+        justify-content: space-between;
+    }
+
+    .gender__details .category div {
+        display: flex;
+        align-items: center;
+    }
+
+    .CancelIcon {
+        color: red;
+    }
+
+    .CheckCircleIcon {
+        color: green;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    form .button {
+        height: 45px;
+    }
+
+    form .button input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        background-color: #94561c;
+        transition: all 0.3s ease;
+    }
+
+    form .button input:active {
+        background-color: #cc8a4c;
+        transform: translateY(-5px);
+    }
+
+    @media only screen and (max-width: 584px) {
+        .container {
+            max-width: 100%;
+        }
+
+        form .user__details .input__box {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        form .gender__details .category {
+            width: 100%;
+        }
+
+        .container form .user__details {
+            max-height: 300px;
+            overflow-y: scroll;
+        }
+
+        .user__details::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+}

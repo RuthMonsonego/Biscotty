@@ -1,0 +1,59 @@
+.so {
+    direction: rtl;
+
+    .container {
+        height: auto;
+        width: 1800;
+        border: 3px solid;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .container>div {
+        flex: 1;
+        border-right: 1px solid black;
+        padding-right: 10px;
+        background-color: white;
+    }
+
+    .container>div:first-child {
+        border-right: none;
+    }
+
+    .con {
+        display: flex;
+        height: 50px;
+        padding-top: 0px;
+        background-color: white;
+    }
+
+    .nums {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-right: 2px;
+    }
+
+    .names {
+        padding-top: 10px;
+        margin-right: 10px;
+    }
+
+    .cake {
+        margin-top: 5px;
+    }
+
+    .l {
+        margin-right: 10px;
+    }
+
+    .delete{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
